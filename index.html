@@ -1,109 +1,64 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/perlin.js"></script>
-    <style>
-     /*[this is where magic is brewed]*/
-      @-webkit-keyframes circle {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
-      @keyframes circle {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
-      @-webkit-keyframes swing {
-        0% {
-          transform: rotate(-20deg);
-        }
-        100% {
-          transform: rotate(20deg);
-        }
-      }
-      @keyframes swing {
-        0% {
-          transform: rotate(-20deg);
-        }
-        100% {
-          transform: rotate(20deg);
-        }
-      }
-      @-webkit-keyframes anchorswing {
-        0% {
-          transform: rotate(15deg);
-        }
-        100% {
-          transform: rotate(-15deg);
-        }
-      }
-      @keyframes anchorswing {
-        0% {
-          transform: rotate(15deg);
-        }
-        100% {
-          transform: rotate(-15deg);
-        }
-      }
-      @-webkit-keyframes pulse {
-        0% {
-          opacity: 1;
-        }
-        10% {
-          opacity: 0.5;
-        }
-        50% {
-          opacity: 0.25;
-        }
-        90% {
-          opacity: 0.5;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-      @keyframes pulse {
-        0% {
-          opacity: 1;
-        }
-        10% {
-          opacity: 0.5;
-        }
-        50% {
-          opacity: 0.25;
-        }
-        90% {
-          opacity: 0.5;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-      @-webkit-keyframes glow {
-        0% {
-          opacity: 0;
-        }
-        50% {
-          opacity: 1;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-      @keyframes glow {
-        0% {
-          opacity: 0;
-        }
+<div class="form-wrapper sign-up">
+
+<form action="#">
+
+<h2>Sign Up</h2>
+
+<div class="input-box">
+
+<input type="text" required>
+
+<label>User Name</label>
+
+</div>
+
+<div class="input-box">
+
+<input type="email" required>
+
+<label>email</label>
+
+</div>
+
+<div class="input-box">
+
+<input type="password" required>
+
+<label>Password</label>
+
+</div>
+
+<button type="submit">Sing In</button>
+
+<div class="sign-link">
+
+<p>Already have an account?
+
+<a href="#" onclick="activeSignIn()"> Sign In </a>
+
+<div class="social-platform">
+
+</p>
+
+</div>
+
+<p>or sing in with</p>
+
+<div class="social-icons">
+
+<a href="#"><i class='bx bxl-facebook'></i></a>
+
+<a href="#"><i class='bx bxl-github'></i></a>
+
+<a href="#"><i class='bx bxl-google'></i></a>
+
+</div>
+
+</div>
+
+</form>
+
+</div>        }
         50% {
           opacity: 1;
         }
